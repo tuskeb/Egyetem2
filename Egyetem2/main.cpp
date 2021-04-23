@@ -1,13 +1,23 @@
 // Egyetem2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// git config --global http.sslverify "false"
 
 #include <iostream>
+#include "wincon.h"
+using namespace MyConsole;
 
 int main()
 {
-    std::cout << "123";
-    std::cout << "Hello World!\n";
-    std::cout << "ASD";
+	MyConsole::Wincon * console = new MyConsole::Wincon();
+	console->setBackgroundColor(Wincon::Color::blue);
+	console->setForegroundColor(Wincon::Color::lightblue);
+	console->gotoxy(10, 10);
+	console->print(66);
+	while (!console->keyavailable()) {
+		cout << "asd \n";
+		console->sleep(1000);
+	}
+	cout << console->readkey();
+	delete console;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
