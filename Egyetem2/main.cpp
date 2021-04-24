@@ -12,6 +12,8 @@ int main()
 	console->print("Programozás");
 	console->setForegroundColor(Wincon::Color::green);
 	console->print("\nRábaközi József\n");
+	console->setForegroundColor(Wincon::Color::red);
+	console->print("\nErcsi Nóra\n");
 	console->setBackgroundColor(Wincon::Color::blue);
 	console->setForegroundColor(Wincon::Color::lightblue);
 	console->gotoxy(10, 10);
