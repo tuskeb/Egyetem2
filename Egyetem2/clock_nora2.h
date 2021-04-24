@@ -12,3 +12,4 @@ public:
 	clock(int sec, int min, int hour);
 	~clock();
 };
+
