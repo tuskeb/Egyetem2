@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 
+
 class digit {
 public:
 
