@@ -17,7 +17,9 @@ int main()
 	console->print("\nErcsi Nóra\n");
 	console->setBackgroundColor(Wincon::Color::blue);
 	console->setForegroundColor(Wincon::Color::lightblue);
-	console->gotoxy(10, 10);
+	console->gotoxy(10, 15);
+	cout << console->cursorX() << endl;
+	cout << console->cursorY() << endl;
 	console->print(66);
 	while (!console->keyavailable()) {
 		cout << "asd \n";
