@@ -1,5 +1,7 @@
 #include "segment.h"
+#include <iostream>
 
+using namespace MyConsole;
 
 void segment::bekapcs()
 {
@@ -27,5 +29,27 @@ segment::segment(const int& x, const int& y, const orientacio& ori)
 
 void segment::megjelenites()
 {
+	Wincon c;
+	c.setBackgroundColor(Wincon::Color::green);
+	c.setForegroundColor(Wincon::Color::lightyellow);
 
+	if (ori = allo) {
+
+
+	}
+	for (int i = 0; i < NUMBER_LENGTH; i++) {
+		c.gotoxy(x+i, y);
+		c.print(" ");
+	
+
+
+	}
+	for (int i = 0; i < NUMBER_LENGTH; i++) {
+		c.gotoxy(x, y+i);
+		c.print(" ");
+	}
+
+
+	//cout << x << y <<endl;
 }
+	
