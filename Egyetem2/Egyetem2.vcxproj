@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="segment.cpp" />
     <ClCompile Include="wincon.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
