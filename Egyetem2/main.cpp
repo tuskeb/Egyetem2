@@ -8,13 +8,29 @@ using namespace MyConsole;
 
 int main()
 {
+	/*
 	segment a(0,0,segment::orientacio::fekvo);
 	segment b(5, 10, segment::orientacio::allo);
 	segment c(15, 7, segment::orientacio::allo);
 	c.bekapcs();
 	a.kikapcs();
+	*/
 
+	segment a(1, 0, segment::orientacio::fekvo);
+	segment b(5, 1, segment::orientacio::allo);
+	segment c(5, 6, segment::orientacio::allo);
+	segment d(1, 10, segment::orientacio::fekvo);
+	segment e(0, 6, segment::orientacio::allo);
+	segment f(0, 1, segment::orientacio::allo);
+	segment g(1, 5, segment::orientacio::fekvo);
 
+	a.bekapcs();
+	b.bekapcs();
+	c.bekapcs();
+	d.bekapcs();
+	e.bekapcs();
+	f.bekapcs();
+	g.bekapcs();
 
 	MyConsole::Wincon * console = new MyConsole::Wincon();
 	/*console->setForegroundColor(Wincon::Color::aqua);
