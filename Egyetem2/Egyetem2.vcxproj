@@ -153,15 +153,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinTree.cpp" />
+    <ClCompile Include="clock_nora.cpp" />
     <ClCompile Include="digit.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="FileLinkedList.cpp" />
+    <ClCompile Include="FileSortedList.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="LinkedStack.cpp" />
     <ClCompile Include="segment.cpp" />
+    <ClCompile Include="SortedList.cpp" />
+    <ClCompile Include="Storage.cpp" />
     <ClCompile Include="wincon.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinTree.h" />
+    <ClInclude Include="clock_nora.h" />
     <ClInclude Include="clock_nora2.h" />
+    <ClInclude Include="clock_zsolt.h" />
     <ClInclude Include="digit.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="FileLinkedList.h" />
+    <ClInclude Include="FileSortedList.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="segment.h" />
+    <ClInclude Include="SortedList.h" />
+    <ClInclude Include="Storage.h" />
     <ClInclude Include="wincon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

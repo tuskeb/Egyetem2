@@ -5,6 +5,7 @@
 #include "wincon.h"
 #include "digit.h"
 #include <stdlib.h>
+#include "LinkedList.h"
 using namespace MyConsole;
 
 
@@ -13,14 +14,15 @@ int main()
 	MyConsole::Wincon* console = new MyConsole::Wincon();
 	console->setBackgroundColor(Wincon::Color::black);
 	system("cls");
-
+	LinkedList<digit*> digital;
 	for (int i = 0; i <= 9; i++) {
-		digit *a = new digit(i * 7, 0);
-		a->set(i);
+		digit* a = new digit(i * 7, 0);
+		digital.add(a);
 	}
-
-	time_t now = time(0);
-	tm* ltm = localtime(&now);
+	digital[0]->set(5);
+	digital[3]->set(8);
+	//time_t now = time(0);
+	//tm* ltm = localtime(&now);
 
 	/*
 	segment a(0,0,segment::orientacio::fekvo);
