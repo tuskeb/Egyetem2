@@ -33,23 +33,21 @@ void segment::megjelenites()
 	c.setBackgroundColor(Wincon::Color::green);
 	c.setForegroundColor(Wincon::Color::lightyellow);
 
-	if (ori = allo) {
-
-
+	if (ori==fekvo)
+	{
+		for (int i = 0; i < NUMBER_LENGTH; i++)
+			{ c.gotoxy(x + i, y);
+			}
 	}
-	for (int i = 0; i < NUMBER_LENGTH; i++) {
-		c.gotoxy(x+i, y);
-		c.print(" ");
-	
-
-
-	}
-	for (int i = 0; i < NUMBER_LENGTH; i++) {
-		c.gotoxy(x, y+i);
-		c.print(" ");
-	}
-
+	else {
+		for (int i = 0; i < NUMBER_LENGTH; i++)
+		{
+			c.gotoxy(x, y + i);
+			c.print(" ");
+		}
+		}
+}
 
 	//cout << x << y <<endl;
-}
+
 	
