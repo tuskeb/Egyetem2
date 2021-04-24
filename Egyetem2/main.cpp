@@ -10,7 +10,7 @@ int main()
 	MyConsole::Wincon * console = new MyConsole::Wincon();
 	console->setForegroundColor(Wincon::Color::aqua);
 	console->print("Programozás");
-	console->print("Kern Zsolt");
+	console->print("\nKern Zsolt\n");
 	console->setForegroundColor(Wincon::Color::green);
 	console->print("\nRábaközi József\n");
 	console->setForegroundColor(Wincon::Color::red);
