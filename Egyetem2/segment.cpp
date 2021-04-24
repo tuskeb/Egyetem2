@@ -33,20 +33,25 @@ void segment::megjelenites()
 	c.setBackgroundColor(Wincon::Color::green);
 	c.setForegroundColor(Wincon::Color::lightyellow);
 
-	if (ori==fekvo)
-	{
-		for (int i = 0; i < NUMBER_LENGTH; i++)
-			{ c.gotoxy(x + i, y);
-			}
-	}
-	else {
-		for (int i = 0; i < NUMBER_LENGTH; i++)
-		{
+	if (ori == segment::orientacio::allo) {
+		for (int i = 0; i < NUMBER_LENGTH; i++) {
 			c.gotoxy(x, y + i);
 			c.print(" ");
+
 		}
-		}
-}
+	}
+	else {
+		for (int i = 0; i < NUMBER_LENGTH; i++) {
+				c.gotoxy(x+i, y);
+				c.print(" ");
+	}
+	
+	
+
+
+	}
+	
+	}
 
 	//cout << x << y <<endl;
 
