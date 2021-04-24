@@ -10,6 +10,7 @@ int main()
 	MyConsole::Wincon * console = new MyConsole::Wincon();
 	console->setForegroundColor(Wincon::Color::aqua);
 	console->print("Programozás");
+	console->print("Kern Zsolt");
 	console->setBackgroundColor(Wincon::Color::blue);
 	console->setForegroundColor(Wincon::Color::lightblue);
 	console->gotoxy(10, 10);
