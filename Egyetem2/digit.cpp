@@ -20,7 +20,7 @@ void digit::set(int num)
 {
 	unsigned char c = digits[num];
 	for (int i = 0; i < 7; i++) {
-		if (c & 1 == 1) {
+		if ((c & 1) == 1) {
 			seg[i]->bekapcs();
 		}
 		else {
