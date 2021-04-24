@@ -19,6 +19,9 @@ int main()
 		a->set(i);
 	}
 
+	time_t now = time(0);
+	tm* ltm = localtime(&now);
+
 	/*
 	segment a(0,0,segment::orientacio::fekvo);
 	segment b(5, 10, segment::orientacio::allo);
