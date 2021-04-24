@@ -5,7 +5,7 @@
 #include "wincon.h"
 #include "digit.h"
 #include <stdlib.h>
-#include "LinkedList.h"
+#include "clock_zsolt.h"
 using namespace MyConsole;
 
 
@@ -14,13 +14,29 @@ int main()
 	MyConsole::Wincon* console = new MyConsole::Wincon();
 	console->setBackgroundColor(Wincon::Color::black);
 	system("cls");
-	LinkedList<digit*> digital;
-	for (int i = 0; i <= 9; i++) {
-		digit* a = new digit(i * 7, 0);
-		digital.add(a);
+	Clock clk;
+	cout << clk.second();
+	digit * digits[6];
+
+	for (int i = 0; i < 6; i++) {
+		digits[i] = new digit(i * 7, 5);
 	}
-	digital[0]->set(5);
-	digital[3]->set(8);
+
+	while (!console->keyavailable()) {
+		console->sleep(100);
+		digits[0]->set(clk.hour() / 10);
+		digits[1]->set(clk.hour() % 10);
+		digits[2]->set(clk.minute() / 10);
+		digits[3]->set(clk.minute() % 10);
+		digits[4]->set(clk.second() / 10);
+		digits[5]->set(clk.second() % 10);
+	}
+
+	for (int i = 0; i < 6; i++) {
+		delete digits[i];
+	}
+
+
 	//time_t now = time(0);
 	//tm* ltm = localtime(&now);
 
@@ -70,7 +86,7 @@ int main()
 	}
 	cout << console->readkey();	
 	delete console;*/
-	console->readkey();
+	//console->readkey();
 	delete console;
 }
 
