@@ -35,6 +35,8 @@ namespace MyConsole {
 
 		Wincon();
 		void gotoxy(int x, int y);
+		int cursorX();
+		int cursorY();
 		void print(char c);
 		void print(string str);
 		void setBackgroundColor(Color c);
