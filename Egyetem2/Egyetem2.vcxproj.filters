@@ -26,5 +26,8 @@
     <ClInclude Include="wincon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="segment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
