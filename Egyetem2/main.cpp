@@ -3,12 +3,19 @@
 
 #include <iostream>
 #include "wincon.h"
+#include "segment.h"
 using namespace MyConsole;
 
 int main()
 {
+	segment a(0,0,segment::orientacio::fekvo);
+	segment b(5, 10, segment::orientacio::allo);
+
+
+
+
 	MyConsole::Wincon * console = new MyConsole::Wincon();
-	console->setForegroundColor(Wincon::Color::aqua);
+	/*console->setForegroundColor(Wincon::Color::aqua);
 	console->print("Programozás");
 	console->print("Kern Zsolt");
 	console->setForegroundColor(Wincon::Color::green);
@@ -26,6 +33,8 @@ int main()
 		console->sleep(1000);
 	}
 	cout << console->readkey();	
+	delete console;*/
+	console->readkey();
 	delete console;
 }
 
