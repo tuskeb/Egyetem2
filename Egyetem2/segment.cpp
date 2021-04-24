@@ -26,9 +26,14 @@ segment::segment(const int& x, const int& y, const orientacio& ori) {
 
 void segment::megjelenites() {
 	Wincon c;
-	c.setBackgroundColor(Wincon::Color::green);
+//	c.setBackgroundColor(Wincon::Color::green);
 	c.setForegroundColor(Wincon::Color::lightyellow);
-
+	if (statusz) {
+		c.setBackgroundColor(Wincon::Color::green);
+	}
+	else {
+		c.setBackgroundColor(Wincon::Color::lightyellow);
+	}
 	if (ori == segment::orientacio::allo) {
 		for (int i = 0; i < NUMBER_LENGTH; i++) {
 			c.gotoxy(x, y + i);
