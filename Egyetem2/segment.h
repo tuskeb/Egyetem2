@@ -5,6 +5,7 @@
 #include "wincon.h"
 
 class segment {
+
 public:
 	static const int NUMBER_LENGTH = 4;
 
