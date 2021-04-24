@@ -10,7 +10,9 @@ int main()
 {
 	segment a(0,0,segment::orientacio::fekvo);
 	segment b(5, 10, segment::orientacio::allo);
-
+	segment c(15, 7, segment::orientacio::allo);
+	c.bekapcs();
+	a.kikapcs();
 
 
 
