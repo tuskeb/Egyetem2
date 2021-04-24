@@ -26,6 +26,20 @@ namespace MyConsole {
 		SetConsoleCursorPosition(handle, coord);
 	}
 
+	int Wincon::cursorX()
+	{
+		CONSOLE_SCREEN_BUFFER_INFO sc;
+		GetConsoleScreenBufferInfo(handle, &sc);
+		return sc.dwCursorPosition.X;
+	}
+
+	int Wincon::cursorY()
+	{
+		CONSOLE_SCREEN_BUFFER_INFO sc;
+		GetConsoleScreenBufferInfo(handle, &sc);
+		return sc.dwCursorPosition.Y;
+	}
+
 	void Wincon::print(char c) {
 		cout << c;
 	}
