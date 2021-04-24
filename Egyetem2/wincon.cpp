@@ -46,7 +46,7 @@ namespace MyConsole {
 
 	bool Wincon::keyavailable()
 	{
-		for (int i = 0; i <= 255; i++) {
+		for (int i = 32; i <= 255; i++) {
 			if (GetAsyncKeyState(i)) {
 				return true;
 			}
