@@ -159,6 +159,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clock_nora2.h" />
     <ClInclude Include="digit.h" />
     <ClInclude Include="segment.h" />
     <ClInclude Include="wincon.h" />
