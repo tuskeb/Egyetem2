@@ -26,6 +26,14 @@ segment::segment(const int& x, const int& y, const orientacio& ori) {
 
 void segment::megjelenites() {
 	Wincon c;
+	if (statusz == true) {
+		c.setBackgroundColor(Wincon::Color::green);
+
+	}
+	else{
+		c.setBackgroundColor(Wincon::Color::gray);
+	}
+
 //	c.setBackgroundColor(Wincon::Color::green);
 	c.setForegroundColor(Wincon::Color::lightyellow);
 	if (statusz) {
