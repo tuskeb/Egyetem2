@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "wincon.h"
-#include "segment.h"
+#include "digit.h"
 #include <stdlib.h>
 using namespace MyConsole;
 
@@ -13,6 +13,14 @@ int main()
 	MyConsole::Wincon* console = new MyConsole::Wincon();
 	console->setBackgroundColor(Wincon::Color::black);
 	system("cls");
+
+	digit a(0,0);
+	digit c(10, 0);
+	digit v(20, 0);
+	a.set(8);
+	c.set(2);
+	v.set(3);
+
 	/*
 	segment a(0,0,segment::orientacio::fekvo);
 	segment b(5, 10, segment::orientacio::allo);
@@ -20,7 +28,7 @@ int main()
 	c.bekapcs();
 	a.kikapcs();
 	*/
-
+	/*
 	segment a(1, 0, segment::orientacio::fekvo);
 	segment b(5, 1, segment::orientacio::allo);
 	segment c(5, 6, segment::orientacio::allo);
@@ -28,7 +36,7 @@ int main()
 	segment e(0, 6, segment::orientacio::allo);
 	segment f(0, 1, segment::orientacio::allo);
 	segment g(1, 5, segment::orientacio::fekvo);
-
+	
 	a.bekapcs();
 	b.bekapcs();
 	c.bekapcs();
@@ -36,6 +44,9 @@ int main()
 	e.bekapcs();
 	f.bekapcs();
 	g.bekapcs();
+	*/
+
+
 
 	/*console->setForegroundColor(Wincon::Color::aqua);
 	console->print("Programozás");

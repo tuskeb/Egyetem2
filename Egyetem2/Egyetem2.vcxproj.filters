@@ -24,12 +24,18 @@
     <ClCompile Include="segment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="digit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="wincon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="segment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="digit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
