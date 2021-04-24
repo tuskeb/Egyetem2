@@ -14,12 +14,10 @@ int main()
 	console->setBackgroundColor(Wincon::Color::black);
 	system("cls");
 
-	digit a(0,0);
-	digit c(10, 0);
-	digit v(20, 0);
-	a.set(8);
-	c.set(2);
-	v.set(3);
+	for (int i = 0; i <= 9; i++) {
+		digit *a = new digit(i * 7, 0);
+		a->set(i);
+	}
 
 	/*
 	segment a(0,0,segment::orientacio::fekvo);
