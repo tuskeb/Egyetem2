@@ -1,6 +1,7 @@
 #include "wincon.h"
 #include <iostream>
 #include <conio.h>
+#include <locale.h>
 
 
 using namespace std;
@@ -10,6 +11,7 @@ namespace MyConsole {
 
 	Wincon::Wincon()
 	{
+		setlocale(LC_ALL, "hun");
 		color = Color::black << 4 | Color::lightgreen;
 		SetConsoleTextAttribute(handle, color);
 		handle = GetStdHandle(STD_OUTPUT_HANDLE);
