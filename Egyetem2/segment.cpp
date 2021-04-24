@@ -3,32 +3,28 @@
 
 using namespace MyConsole;
 
-void segment::bekapcs()
-{
-	if (statusz) return; 
+void segment::bekapcs() {
+	if (statusz) return;
 	statusz = true;
 	megjelenites();
 }
 
-void segment::kikapcs()
-{
+void segment::kikapcs() {
 	if (!statusz) return;
 	statusz = false;
 	megjelenites();
 }
 
-segment::segment(const int& x, const int& y, const orientacio& ori)
-{
+segment::segment(const int& x, const int& y, const orientacio& ori) {
 	this->x = x;
 	this->y = y;
 	this->ori = ori;
 	statusz = false;
 	megjelenites();
-	
+
 }
 
-void segment::megjelenites()
-{
+void segment::megjelenites() {
 	Wincon c;
 	c.setBackgroundColor(Wincon::Color::green);
 	c.setForegroundColor(Wincon::Color::lightyellow);
@@ -37,23 +33,13 @@ void segment::megjelenites()
 		for (int i = 0; i < NUMBER_LENGTH; i++) {
 			c.gotoxy(x, y + i);
 			c.print(" ");
-
 		}
 	}
 	else {
 		for (int i = 0; i < NUMBER_LENGTH; i++) {
-				c.gotoxy(x+i, y);
-				c.print(" ");
+			c.gotoxy(x + i, y);
+			c.print(" ");
+		}
 	}
-	
-	
+}
 
-
-	}
-	
-	}
-
-
-	//cout << x << y <<endl;
-
-	
