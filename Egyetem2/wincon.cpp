@@ -13,7 +13,7 @@ namespace MyConsole {
 		color = Color::black << 4 | Color::lightgreen;
 		SetConsoleTextAttribute(handle, color);
 		handle = GetStdHandle(STD_OUTPUT_HANDLE);
-		cout << "Hello world:)";
+		//cout << "Hello world:)";
 	}
 
 	void Wincon::gotoxy(int x, int y)
