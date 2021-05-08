@@ -1,6 +1,8 @@
 // Egyetem2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // git config --global http.sslverify "false"
 
+//#define debug
+
 #include <iostream>
 #include "wincon.h"
 #include "digit.h"
@@ -8,6 +10,9 @@
 #include "clock_zsolt.h"
 #include "SortedList.h"
 #include "LinkedList.h"
+#include "FileLinkedList.h"
+#include "FileSortedList.h"
+#include "Time.h"
 #include "Storage.h"
 using namespace MyConsole;
 
@@ -19,14 +24,27 @@ int main()
 	console->setForegroundColor(Wincon::Color::white);
 	system("cls");
 
+	Time a;
+	Time b;
 
-	LinkedList<int> s;
+	cout << a << endl;
+	cout << b << endl;
+
+	//FileSortedList<Time> alarms;
+
+
+
+
+	/*
+	FileLinkedList<int> s;
 	s.add(3).add(1).add(7).add(2).add(66);
 	s.addAll(3, 4, 2, 8);
 	cout << s << endl;
 	cout << s.get(2) << endl;
 	s.get(2) = 8;
 	cout << s << endl;
+	s.toBinaryFile("teszt.dat");
+	s.toTextFile("teszt.txt");
 
 	LinkedList<string> m;
 	m.add("asd").add("qwe").add("yxc");
@@ -36,7 +54,18 @@ int main()
 	k.add('b').add('l').add('m');
 	cout << k << endl;
 
+	LinkedList<char> kcopy(k);
+	cout << kcopy << endl;
 
+	LinkedList<int> kk(3, 88, 77, 66);
+	cout << kk << endl;
+	kk[1] = 9999;
+	cout << kk[1] << endl;
+
+	cout << kk << endl;
+
+	
+	*/
 /*
 	Clock clk;
 	cout << clk.second();

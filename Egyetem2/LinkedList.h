@@ -211,7 +211,7 @@ public:
 	}
 	
 
-	T& getByValue(const T& value, const int& start = 0) {
+	T& getByValue(const T& value, const int& start) {
 		Data<T>* iterator = first;
 		int count = 0;
 		while (iterator != NULL && start > count)
