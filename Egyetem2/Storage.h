@@ -30,7 +30,7 @@ public:
 	virtual int size() const = 0;
 
 	/*Érték alapján keresés. Ehhez a metódushoz a T típusnak az összehasonlító operátorokat definiálni kell. Mivel bizonyos adatszerkezetek támogatják az értékek egyenlõségét (kapcsolt lista), bizonyosak pedig nem (bináris fa), ezért van értelme az elõfordulás keresés kezdetének a helyét megadni.*/
-	//virtual T& getByValue(const T&) = 0;
+	virtual T& getByValue(const T&) = 0;
 
 
 	/*Több adat felvitele egyszerre. Ez kifejthetõ itt, mert az add metódus már fent definiálásra került. Bár a tartalmát a leszármazott osztályok fogják majd megadni.*/

@@ -6,6 +6,9 @@
 #include "digit.h"
 #include <stdlib.h>
 #include "clock_zsolt.h"
+#include "SortedList.h"
+#include "LinkedList.h"
+#include "Storage.h"
 using namespace MyConsole;
 
 
@@ -13,13 +16,29 @@ int main()
 {
 	MyConsole::Wincon* console = new MyConsole::Wincon();
 	console->setBackgroundColor(Wincon::Color::black);
+	console->setForegroundColor(Wincon::Color::white);
 	system("cls");
+
+
+	LinkedList<int> s;
+	s.add(3).add(1).add(7).add(2).add(66);
+	s.addAll(3, 4, 2, 8);
+	cout << s << endl;
+	cout << s.get(2) << endl;
+	s.get(2) = 8;
+	cout << s << endl;
+
+	LinkedList<string> m;
+	m.add("asd").add("qwe").add("yxc");
+	cout << m << endl;
+
+/*
 	Clock clk;
 	cout << clk.second();
 	digit * digits[6];
 
 	for (int i = 0; i < 6; i++) {
-		digits[i] = new digit(i * 7, 5);
+		digits[i] = new digit(i * 9, 6);
 	}
 
 	while (!console->keyavailable()) {
@@ -36,7 +55,7 @@ int main()
 		delete digits[i];
 	}
 
-
+	*/
 	//time_t now = time(0);
 	//tm* ltm = localtime(&now);
 
