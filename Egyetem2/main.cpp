@@ -32,6 +32,11 @@ int main()
 	m.add("asd").add("qwe").add("yxc");
 	cout << m << endl;
 
+	LinkedList<char> k;
+	k.add('b').add('l').add('m');
+	cout << k << endl;
+
+
 /*
 	Clock clk;
 	cout << clk.second();

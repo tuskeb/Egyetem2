@@ -28,7 +28,6 @@ public:
 		tm gmtm;
 		localtime_s(&gmtm, &now);
 		int tm = gmtm.tm_hour;
-		
 		return tm;
 	}
 };
